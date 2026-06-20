@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0B0B0C" />
+    <meta
+      name="description"
+      content="Skye Vasquez — Director of Business Development. 16+ years building relationships, partnerships, and growth."
+    />
+    <meta name="author" content="Skye Vasquez" />
+
+    <!-- Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Skye Vasquez" />
+    <meta property="og:description" content="Director of Business Development. 16+ years of relationships, partnerships, and growth." />
+    <meta property="og:image" content="/images/headshot.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Space+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Skye Vasquez</title>
+  </head>
+  <body>
+    <!-- ============================================================ -->
+    <!-- LOADER                                                        -->
+    <!-- ============================================================ -->
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader__inner">
+        <div class="loader__brand">
+          <span class="loader__mark">SV</span>
+          <span class="loader__label">Loading</span>
+        </div>
+        <div class="loader__count"><span id="loaderCount">0</span><span class="loader__pct">%</span></div>
+      </div>
+      <div class="loader__bar"><span class="loader__bar-fill" id="loaderBar"></span></div>
+    </div>
+
+    <!-- Custom cursor (desktop only) -->
+    <div class="cursor" id="cursor" aria-hidden="true">
+      <span class="cursor__dot"></span>
+      <span class="cursor__ring"></span>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- 3D CANVAS (fixed, behind content)                             -->
+    <!-- ============================================================ -->
+    <canvas id="webgl" class="webgl" aria-hidden="true"></canvas>
+    <div class="webgl-fallback" id="webglFallback" aria-hidden="true"></div>
+
+    <!-- Scroll progress rail -->
+    <div class="scroll-rail" aria-hidden="true"><span id="scrollRailFill"></span></div>
+
+    <!-- ============================================================ -->
+    <!-- NAV                                                           -->
+    <!-- ============================================================ -->
+    <header class="nav" id="nav">
+      <a href="#top" class="nav__brand" data-cursor="link">
+        <span class="nav__brand-mark">SV</span>
+        <span class="nav__brand-name">Skye Vasquez</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about" data-cursor="link"><span>01</span> About</a>
+        <a href="#focus" data-cursor="link"><span>02</span> Focus</a>
+        <a href="#contact" data-cursor="link"><span>03</span> Contact</a>
+      </nav>
+      <div class="nav__meta">
+        <span class="nav__status"><span class="nav__status-dot"></span>Available</span>
+        <a href="#contact" class="nav__cta" data-cursor="link">Let&rsquo;s talk</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ====================================================== -->
+      <!-- HERO                                                    -->
+      <!-- ====================================================== -->
+      <section class="hero" id="hero" aria-label="Introduction">
+        <div class="hero__top">
+          <span class="kicker" data-reveal>Portfolio &mdash; Est. 2008</span>
+          <span class="kicker kicker--right" data-reveal>Biz Dev &middot; Partnerships &middot; Growth</span>
+        </div>
+
+        <h1 class="hero__title">
+          <span class="hero__line" data-hero-line>
+            <span class="hero__word" data-split="SKYE">SKYE</span>
+          </span>
+          <span class="hero__line" data-hero-line>
+            <span class="hero__word hero__word--italic" data-split="VASQUEZ">VASQUEZ</span>
+          </span>
+        </h1>
+
+        <div class="hero__foot">
+          <p class="hero__tagline" data-reveal>
+            Director of Business Development building relationships, partnerships,
+            and growth.
+          </p>
+          <div class="hero__scroll" data-reveal>
+            <span>Scroll</span>
+            <span class="hero__scroll-line"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================== -->
+      <!-- ABOUT                                                   -->
+      <!-- ====================================================== -->
+      <section class="about" id="about" aria-labelledby="aboutTitle">
+        <div class="about__grid">
+          <div class="about__media" data-parallax>
+            <div class="about__media-frame">
+              <img
+                src="/images/headshot.jpg"
+                alt="Portrait of Skye Vasquez"
+                width="900"
+                height="1200"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="about__media-tag">Est. 2008 &mdash; Present</span>
+            </div>
+          </div>
+
+          <div class="about__copy">
+            <span class="kicker" data-reveal>01 &mdash; About</span>
+            <h2 class="about__title" id="aboutTitle" data-split-words>
+              Sixteen years of turning relationships into results.
+            </h2>
+
+            <div class="about__bio" data-lines>
+              <p data-reveal-line>
+                With over 16 years of experience, I currently serve as the Director of
+                Business Development at 911 Cell Phone Bank. I lead Account and
+                Relationship Management, forge strategic partnerships, and drive the
+                growth initiatives that move the business forward.
+              </p>
+              <p data-reveal-line>
+                My work lives at the intersection of people and strategy &mdash;
+                building trust with clients, aligning teams around shared goals, and
+                finding the partnerships that compound over time. Every relationship
+                is a long game.
+              </p>
+            </div>
+
+            <dl class="about__stats">
+              <div data-stat>
+                <dt>Experience</dt>
+                <dd><span data-count="16">0</span><span class="about__stat-suffix">+ yrs</span></dd>
+              </div>
+              <div data-stat>
+                <dt>Focus</dt>
+                <dd><span data-count="3">0</span></dd>
+              </div>
+              <div data-stat>
+                <dt>Disciplines</dt>
+                <dd><span data-count="9">0</span><span class="about__stat-suffix">+</span></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================== -->
+      <!-- FOCUS / MARQUEE                                         -->
+      <!-- ====================================================== -->
+      <section class="focus" id="focus" aria-labelledby="focusTitle">
+        <div class="focus__head">
+          <span class="kicker" data-reveal>02 &mdash; Focus</span>
+          <h2 class="focus__title" id="focusTitle" data-split-words>
+            Where the work concentrates.
+          </h2>
+        </div>
+
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee__track" id="marqueeTrack">
+            <!-- filled by JS for seamless loop -->
+          </div>
+        </div>
+
+        <ul class="focus__list">
+          <li class="focus__item" data-focus-item>
+            <span class="focus__item-no">01</span>
+            <div class="focus__item-body">
+              <h3>Business Development</h3>
+              <p>Identifying opportunity, opening doors, and building the pipeline that sustains long-term growth.</p>
+            </div>
+          </li>
+          <li class="focus__item" data-focus-item>
+            <span class="focus__item-no">02</span>
+            <div class="focus__item-body">
+              <h3>Account &amp; Relationship Mgmt</h3>
+              <p>Stewarding key accounts through trust, consistency, and a genuine long-game mindset.</p>
+            </div>
+          </li>
+          <li class="focus__item" data-focus-item>
+            <span class="focus__item-no">03</span>
+            <div class="focus__item-body">
+              <h3>Strategic Partnerships</h3>
+              <p>Forging alliances that compound &mdash; aligning the right organizations around shared goals.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ====================================================== -->
+      <!-- CONTACT                                                 -->
+      <!-- ====================================================== -->
+      <section class="contact" id="contact" aria-labelledby="contactTitle">
+        <span class="kicker kicker--center" data-reveal>03 &mdash; Contact</span>
+        <h2 class="contact__title" id="contactTitle">
+          <span class="contact__title-line" data-split="LET'S">LET&rsquo;S</span>
+          <span class="contact__title-line contact__title-line--italic" data-split="TALK.">TALK.</span>
+        </h2>
+        <p class="contact__sub" data-reveal>
+          Open to conversations about partnerships, growth, and what comes next.
+        </p>
+        <a class="contact__mail" href="mailto:skye@applylogics.com" data-cursor="link" data-reveal>
+          skye@applylogics.com
+        </a>
+      </section>
+
+      <!-- ====================================================== -->
+      <!-- FOOTER                                                  -->
+      <!-- ====================================================== -->
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__col">
+            <span class="kicker">Elsewhere</span>
+            <ul class="footer__links">
+              <li><a href="#" data-cursor="link">LinkedIn</a></li>
+              <li><a href="mailto:skye@applylogics.com" data-cursor="link">Email</a></li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col--right">
+            <span class="kicker">Local time</span>
+            <p class="footer__time" id="localTime">&mdash;</p>
+            <p class="footer__loc">United States</p>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>&copy; <span id="year"></span> Skye Vasquez</span>
+          <span class="footer__credit">Built with Three.js &amp; GSAP</span>
+          <a href="#top" class="footer__top-link" data-cursor="link">Back to top &uarr;</a>
+        </div>
+      </footer>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
